@@ -5,14 +5,15 @@ type AllType = {
      weight: number
     }
     
-    function compare (top, bottom): AllType {
+    function compare (top:Pick<AllType,'name'|'color'>, bottom:Pick<AllType,'position'|'weight'>): Pick<AllType, 'name'|'color' | 'position'|'weight'> {
      return {
      name: top.name,
      color: top.color,
      position: bottom.position,
      weight: bottom.weight,
      }
-    }
+}
+    
     
     // У вас є тип AllType.Існує функція compare,
     // яка приймає два об'єкти. Ці об'єкти містять поля AllType.

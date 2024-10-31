@@ -1,4 +1,11 @@
-const mango = {
+interface User {
+  name: string;
+  age: number;
+  email: string;
+  address?: { city: string, country: string }
+}
+
+const mango: User = {
      name: 'Mango',
      age: 30,
      email: 'john@example.com',
@@ -14,11 +21,6 @@ const mango = {
      email: 'john@example.com'
 };
 
-  interface User {
-  name: string;
-  age: number;
-  email: string;
-  address(citye: string, country: string): string | null;
-}
+   
 
   

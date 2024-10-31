@@ -1,3 +1,11 @@
+type NewPage = {
+     title: string,
+     likes: number,
+     accounts: [string],
+     status: 'open' | 'close',
+     details?: {createAt: Date, updateAt: Date}
+   }
+
 const page1 = {
      title: 'The awesome page',
      likes: 100,
@@ -16,13 +24,4 @@ const page1 = {
      status: 'close',
 }
     
-interface newPage {
-     title: string,
-     likes: number,
-     accounts: [string],
-     status: 'open' | 'close',
-     details: Date | null {createAt: Date(), updateAt: Date()}
-   }
-    // Створіть новий тип даних,
-    // який підходить для цих двох об'єктів.
-
+ 
